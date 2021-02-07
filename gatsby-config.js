@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Klimacamp Ulm / Neu-Ulm",
+    siteUrl: "https://klimacamp-ulm.de",
   },
   plugins: [
     "gatsby-plugin-styled-components",
