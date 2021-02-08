@@ -44,7 +44,7 @@ const Footer = styled.footer`
   padding: 2em 0;
 `
 
-export default ({title, children}) => (
+export default ({ title, children }) => (
   <Container>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
@@ -53,9 +53,7 @@ export default ({title, children}) => (
       </Helmet>
       <Header>
         <Logo src={logo} />
-        <h1>
-          Klimacamp Ulm
-        </h1>
+        <h1>Klimacamp Ulm</h1>
       </Header>
       <Main>
         {children}
@@ -65,5 +63,4 @@ export default ({title, children}) => (
       </Main>
     </ThemeProvider>
   </Container>
-
 )
