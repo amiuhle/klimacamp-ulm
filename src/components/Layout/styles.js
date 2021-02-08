@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
-// import Jost from '../../assets/fonts/Jost-VariableFont_wght.ttf'
+import JostNormal from '../../assets/fonts/Jost-VariableFont_wght.ttf'
+import JostItalic from '../../assets/fonts/Jost-VariableFont_wght.ttf'
 
 const brandPrimary = '#1D7441'
 const brandSecondary = '#41339A'
@@ -25,11 +26,21 @@ export const theme = {
 }
 
 export const GlobalStyle = createGlobalStyle`
-  /* @font-face {
-    font-family: Jost;
+  @font-face {
+    font-family: 'Jost';
+    src: url(${JostNormal}) format('truetype');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
     font-style: normal;
-    font-weight: 400;
-  } */
+  }
+
+  @font-face {
+    font-family: 'Jost';
+    src: url(${JostItalic}) format('truetype');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: italic;
+  }
 
   * {
     box-sizing: border-box;
