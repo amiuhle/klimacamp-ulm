@@ -6,6 +6,8 @@ import styled, { ThemeProvider } from 'styled-components'
 import { GlobalStyle, theme } from './styles'
 import logo from '../../assets/images/logo.png'
 
+import MainNav from './MainNav'
+
 const Container = styled.div`
   height: 100%;
   width: 100%;
@@ -69,6 +71,7 @@ export default ({ title, fallbackTitle, children }) => (
           <Logo src={logo} />
         </Link>
         <Brand><Link to="/">Klimacamp Ulm</Link></Brand>
+        <MainNav />
       </Header>
       <Main>
         {children}

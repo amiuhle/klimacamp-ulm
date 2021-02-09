@@ -26,5 +26,17 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-svg-sprite-loader",
+      options: {
+        esModule: false,
+        extract: false,
+        symbolId: "[name]",
+        /* SVG sprite loader options */
+        pluginOptions: {
+          /* SVG sprite loader plugin options */
+        }
+      },
+    },
   ],
 };
