@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("Wbzz"),r=t("q1tI"),l=t.n(r),c=t("Zttt");n.default=function(){return l.a.createElement(c.a,null,l.a.createElement("h2",null,"Herzlich Willkommen"),l.a.createElement("p",null,"Unsere Website befindet sich noch im Aufbau, hier geht's zum"," ",l.a.createElement(a.a,{to:"/germanzero"},"GermanZero Klimaentscheid"),"."))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-9a1a47232aa08a9c4539.js.map
