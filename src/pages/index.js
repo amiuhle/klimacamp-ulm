@@ -9,7 +9,7 @@ const IndexPage = () => {
     <Layout title="GermanZero Klimaentscheid">
       <h2>Herzlich Willkommen</h2>
       <p>
-        Unsere Website befindet sich noch im Aufbau, hier geht's zum
+        Unsere Website befindet sich noch im Aufbau, hier geht's zum{' '}
         <Link to="/germanzero">GermanZero Klimaentscheid</Link>.
       </p>
     </Layout>

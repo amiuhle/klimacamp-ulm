@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
@@ -6,11 +7,13 @@ import { GlobalStyle, theme } from './styles'
 import logo from '../../assets/images/logo.png'
 
 const Container = styled.div`
-  display: grid;
-
   height: 100%;
-  margin: 0;
   width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 1024px;
+    margin: 0 auto;
+  }
 
   display: grid;
   grid-template-rows: 64px 1fr;
@@ -52,7 +55,9 @@ export default ({ title, children }) => (
         <title>{title}</title>
       </Helmet>
       <Header>
-        <Logo src={logo} />
+        <Link to="/">
+          <Logo src={logo} />
+        </Link>
         <h1>Klimacamp Ulm</h1>
       </Header>
       <Main>
