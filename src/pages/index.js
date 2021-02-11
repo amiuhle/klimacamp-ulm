@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 // markup
 const IndexPage = () => {
   return (
-    <Layout title="GermanZero Klimaentscheid">
+    <Layout>
       <h2>Herzlich Willkommen</h2>
       <p>
         Unsere Website befindet sich noch im Aufbau, hier geht's zum{' '}

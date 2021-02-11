@@ -47,12 +47,15 @@ const Footer = styled.footer`
   padding: 2em 0;
 `
 
-export default ({ title, children }) => (
+const setTitle =
+(title, fallback='Klimacamp Ulm / Neu-Ulm') => title ? `${title} | ${fallback}` : fallback
+
+export default ({ title, fallbackTitle, children }) => (
   <Container>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
       <Helmet>
-        <title>{title}</title>
+        <title>{setTitle(title, fallbackTitle)}</title>
       </Helmet>
       <Header>
         <Link to="/">
