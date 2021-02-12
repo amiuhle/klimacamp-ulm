@@ -66,7 +66,7 @@ export default ({ title, fallbackTitle, children }) => (
       <Main>
         {children}
         <Footer>
-          <a href="/imprint">Impressum</a>
+          <Link href="/imprint">Impressum</Link> | <Link to="/privacy">Datenschutz</Link>
         </Footer>
       </Main>
     </ThemeProvider>
