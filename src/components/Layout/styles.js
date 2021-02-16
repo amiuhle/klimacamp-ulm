@@ -86,5 +86,9 @@ export const GlobalStyle = createGlobalStyle`
     color: ${theme.colors.brandPrimary};
     font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `

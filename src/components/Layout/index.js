@@ -47,6 +47,13 @@ const Footer = styled.footer`
   padding: 2em 0;
 `
 
+const Brand = styled.h1`
+  a {
+    color: ${({theme}) => theme.colors.text};
+    font-weight: normal;
+  }
+`
+
 const setTitle =
 (title, fallback='Klimacamp Ulm / Neu-Ulm') => title ? `${title} | ${fallback}` : fallback
 
@@ -61,7 +68,7 @@ export default ({ title, fallbackTitle, children }) => (
         <Link to="/">
           <Logo src={logo} />
         </Link>
-        <h1>Klimacamp Ulm</h1>
+        <Brand><Link to="/">Klimacamp Ulm</Link></Brand>
       </Header>
       <Main>
         {children}
