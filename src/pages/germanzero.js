@@ -59,8 +59,8 @@ const IndexPage = () => {
       </p>
       <h3>Wie kann ich unterschreiben?</h3>
       <p>
-        Die Unterschriftenliste für Ulm ist noch in Arbeit, für Neu-Ulm können
-        wir bereits Unterschriften sammeln. Das ist im Moment wegen Corona
+        Mittlerweile sind beide Unterschriftenlisten fertig und wir können für
+        Ulm und Neu-Ulm Unterschriften sammeln. Das ist im Moment wegen Corona
         leider nicht so einfach, deswegen findet ihr die Unterschriftenliste
         unten verlinkt. Druckt sie gerne aus und animiert Bekannte oder
         Arbeitskolleg:innen zu unterschreiben, sofern das im Moment möglich ist.
@@ -70,12 +70,8 @@ const IndexPage = () => {
         müssen.
       </p>
       <h3>
-        Klickt auf den{' '}
-        <a href="https://cloudstore.uni-ulm.de/s/qySt3ajJbWXosi8">
-          Download Link
-        </a>{' '}
-        - Druckt die Unterschriftenliste aus - Füllt sie aus (gerne weitergeben)
-        - und gebt sie an folgenden Orten ab:
+        Ladet die Unterschriftenlisten herunter, druckt sie aus, unterschreibt
+        und gebt sie an folgenden Orten ab:
       </h3>
       <table>
         <thead>
@@ -161,17 +157,34 @@ const IndexPage = () => {
       <h3>Downloads</h3>
       <ul>
         <li>
-          <a href="https://cloudstore.uni-ulm.de/s/f5MM9nca6asPYqi">
+          <a
+            href="https://cloudstore.uni-ulm.de/s/KMHi4RYPQzHHPSR"
+            target="_blank"
+          >
+            Unterschriftenliste Ulm
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://cloudstore.uni-ulm.de/s/Dt5A7eosctgHZke"
+            target="_blank"
+          >
             Unterschriftenliste Neu-Ulm
           </a>
         </li>
         <li>
-          <a href="https://cloudstore.uni-ulm.de/s/Yc8wwRTMY54WcHA">
+          <a
+            href="https://cloudstore.uni-ulm.de/s/Yc8wwRTMY54WcHA"
+            target="_blank"
+          >
             Klimastadtplan Ulm
           </a>
         </li>
         <li>
-          <a href="https://cloudstore.uni-ulm.de/s/qySt3ajJbWXosi8">
+          <a
+            href="https://cloudstore.uni-ulm.de/s/qySt3ajJbWXosi8"
+            target="_blank"
+          >
             Klimastadtplan Neu-Ulm
           </a>
         </li>
