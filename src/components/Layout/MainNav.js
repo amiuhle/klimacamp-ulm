@@ -98,8 +98,8 @@ export const pages = {
   '/': 'Home',
 }
 
-export const CurrentPage = ({location}) => (
-  <Brand>{location || 'Klimacamp Ulm'}</Brand>
+export const CurrentPage = () => (
+  <Brand>{isGermanZero() ? 'Klimaentscheid' : 'Klimacamp Ulm/Neu-Ulm'}</Brand>
 )
 
 const MenuButton = styled(Icon)`
@@ -108,6 +108,34 @@ const MenuButton = styled(Icon)`
   }
 `
 
+export const isGermanZero = () => window.location.pathname.startsWith('/germanzero')
+
+const getMainNav = () => isGermanZero() ?
+  (
+    <>
+      <li>
+        <NavItem to="/germanzero">Home</NavItem>
+      </li>
+      <li>
+        <Logo src={klimacamp} />
+        <NavItem to="/">Klimacamp</NavItem>
+      </li>
+    </>
+  ) :
+  (
+    <>
+      <li>
+        <NavItem to="/">Home</NavItem>
+      </li>
+      <li>
+        <NavItem to="/news">News</NavItem>
+      </li>
+      <li>
+        <Logo src={germanzero} />
+        <NavItem to="/germanzero">GermanZero</NavItem>
+      </li>
+    </>
+  )
 
 const MainNav = () => {
   const [isVisible, setVisible] = useState(false)
@@ -117,16 +145,7 @@ const MainNav = () => {
       <MenuButton name="menu" onClick={() => setVisible(!isVisible)} />
       <Nav>
         <NavList visible={isVisible}>
-          <li>
-            <NavItem to="/">Home</NavItem>
-          </li>
-          <li>
-            <NavItem to="/news">News</NavItem>
-          </li>
-          <li>
-            <Logo src={germanzero} />
-            <NavItem to="/germanzero">GermanZero</NavItem>
-          </li>
+          {getMainNav()}
         </NavList>
       </Nav>
     </>

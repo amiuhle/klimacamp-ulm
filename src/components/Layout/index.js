@@ -57,8 +57,8 @@ export default ({ title, fallbackTitle, children }) => (
         <title>{setTitle(title, fallbackTitle)}</title>
       </Helmet>
       <Header>
-        <Link to="/">
-          <Logo brand src={klimacamp} />
+        <Link to={isGermanZero() ? '/germanzero' : '/'}>
+          <Logo brand src={isGermanZero() ? germanzero : klimacamp} />
         </Link>
         <CurrentPage />
         <MainNav />
