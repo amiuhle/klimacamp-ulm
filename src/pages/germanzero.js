@@ -32,17 +32,17 @@ const IndexPage = () => {
       </h3>
       <p>
         Unsere Abstimmungsfragen sind:
-        <blockquote>
-          Sind Sie dafür, dass Neu-Ulm unverzüglich einen gelosten Bürgerrat
-          einberuft, welcher in 6-12 Monaten einen Klimaaktionsplan zur
-          Klimaneutralität bis 2030 in Neu-Ulm erarbeitet?
-        </blockquote>
-        <blockquote>
-          Sind Sie dafür, dass Ulm unverzüglich ein Planungsbüro beauftragt,
-          welches innerhalb von 6-12 Monaten einen Klimaaktionsplan zur
-          Klimaneutralität bis 2030 in Ulm erstellt?
-        </blockquote>
       </p>
+      <blockquote>
+        Sind Sie dafür, dass Neu-Ulm unverzüglich einen gelosten Bürgerrat
+        einberuft, welcher in 6-12 Monaten einen Klimaaktionsplan zur
+        Klimaneutralität bis 2030 in Neu-Ulm erarbeitet?
+      </blockquote>
+      <blockquote>
+        Sind Sie dafür, dass Ulm unverzüglich ein Planungsbüro beauftragt,
+        welches innerhalb von 6-12 Monaten einen Klimaaktionsplan zur
+        Klimaneutralität bis 2030 in Ulm erstellt?
+      </blockquote>
       <p>
         GermanZero hat für beide Städte einen Klimastadtplan erstellt, der als
         Leitfaden für notwendige Massnahmen dient, um in beiden Städten
@@ -160,6 +160,7 @@ const IndexPage = () => {
           <a
             href="https://cloudstore.uni-ulm.de/s/MLq8oyprakp4yHJ"
             target="_blank"
+            rel="noreferrer"
           >
             Unterschriftenliste Ulm
           </a>
@@ -168,6 +169,7 @@ const IndexPage = () => {
           <a
             href="https://cloudstore.uni-ulm.de/s/Dt5A7eosctgHZke"
             target="_blank"
+            rel="noreferrer"
           >
             Unterschriftenliste Neu-Ulm
           </a>
@@ -176,6 +178,7 @@ const IndexPage = () => {
           <a
             href="https://cloudstore.uni-ulm.de/s/Yc8wwRTMY54WcHA"
             target="_blank"
+            rel="noreferrer"
           >
             Klimastadtplan Ulm
           </a>
@@ -184,6 +187,7 @@ const IndexPage = () => {
           <a
             href="https://cloudstore.uni-ulm.de/s/qySt3ajJbWXosi8"
             target="_blank"
+            rel="noreferrer"
           >
             Klimastadtplan Neu-Ulm
           </a>
