@@ -4,7 +4,10 @@ import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle, theme } from './styles'
-import logo from '../../assets/images/logo.png'
+import germanzero from '../../assets/images/germanzero.png'
+import klimacamp from '../../assets/images/klimacamp.png'
+
+import MainNav, { CurrentPage, Logo, isGermanZero } from './MainNav'
 
 const Container = styled.div`
   height: 100%;
@@ -25,15 +28,11 @@ const Container = styled.div`
 
 const Header = styled.header`
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   align-items: center;
-  margin: auto 1em;
+  margin: 0 1em;
   grid-area: header;
-`
-
-const Logo = styled.img`
-  height: 48px;
-  width: 48px;
-  margin-right: 1em;
 `
 
 const Main = styled.main`
@@ -47,13 +46,6 @@ const Footer = styled.footer`
   padding: 2em 0;
 `
 
-const Brand = styled.h1`
-  a {
-    color: ${({theme}) => theme.colors.text};
-    font-weight: normal;
-  }
-`
-
 const setTitle =
 (title, fallback='Klimacamp Ulm / Neu-Ulm') => title ? `${title} | ${fallback}` : fallback
 
@@ -65,15 +57,16 @@ export default ({ title, fallbackTitle, children }) => (
         <title>{setTitle(title, fallbackTitle)}</title>
       </Helmet>
       <Header>
-        <Link to="/">
-          <Logo src={logo} />
+        <Link to={isGermanZero() ? '/germanzero' : '/'}>
+          <Logo brand src={isGermanZero() ? germanzero : klimacamp} />
         </Link>
-        <Brand><Link to="/">Klimacamp Ulm</Link></Brand>
+        <CurrentPage />
+        <MainNav />
       </Header>
       <Main>
         {children}
         <Footer>
-          <Link href="/imprint">Impressum</Link> | <Link to="/privacy">Datenschutz</Link>
+          <Link to="/imprint">Impressum</Link> | <Link to="/privacy">Datenschutz</Link>
         </Footer>
       </Main>
     </ThemeProvider>

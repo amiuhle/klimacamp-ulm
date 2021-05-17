@@ -83,7 +83,7 @@ const IndexPage = () => {
       </p>
       <p>
         Impressum:{' '}
-        <a href="http://klimacamp-ulm.de/imprint/" target="_blank">
+        <a href="http://klimacamp-ulm.de/imprint/">
           http://klimacamp-ulm.de/imprint/
         </a>
         .
