@@ -70,6 +70,10 @@ const NavList = styled.ul`
     li {
       flex-direction: row;
       justify-content: flex-start;
+
+      &:last-child {
+        align-self: flex-end;
+      }
     }
   }
 `
@@ -92,6 +96,10 @@ const NavItem = styled(Link).attrs({ activeClassName })`
 const Brand = styled.h1`
   color: ${({theme}) => theme.colors.text};
   font-weight: normal;
+
+  @media(min-width: 768px) {
+    margin-left: 1rem;
+  }
 `
 
 export const pages = {
