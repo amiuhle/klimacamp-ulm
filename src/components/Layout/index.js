@@ -49,7 +49,7 @@ const Footer = styled.footer`
 const setTitle =
 (title, fallback='Klimacamp Ulm / Neu-Ulm') => title ? `${title} | ${fallback}` : fallback
 
-export default ({ title, fallbackTitle, children }) => (
+const Layout = ({ title, fallbackTitle, children }) => (
   <Container>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
@@ -72,3 +72,5 @@ export default ({ title, fallbackTitle, children }) => (
     </ThemeProvider>
   </Container>
 )
+
+export default Layout
