@@ -116,7 +116,7 @@ const MenuButton = styled(Icon)`
   }
 `
 
-export const isGermanZero = () => window.location.pathname.startsWith('/germanzero')
+export const isGermanZero = () => location.pathname.startsWith('/germanzero') // eslint-disable-line no-restricted-globals
 
 const getMainNav = () => isGermanZero() ?
   (
