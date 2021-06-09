@@ -1,6 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+
+import Klimastadtplan_Neu_Ulm from '../assets/documents/Klimastadtplan_Neu_Ulm.pdf'
+import Klimastadtplan_Ulm from '../assets/documents/Klimastadtplan_Ulm.pdf'
+import Unterschriftenliste_Neu_Ulm from '../assets/documents/Unterschriftenliste_Neu-Ulm.pdf'
+import Unterschriftenliste_Ulm from '../assets/documents/Unterschriftenliste_Ulm.pdf'
+
+const DownloadLink = styled.a.attrs({
+  target: '_blank',
+  rel: 'noreferrer'
+})``
 
 // markup
 const IndexPage = () => {
@@ -157,40 +168,26 @@ const IndexPage = () => {
       <h3>Downloads</h3>
       <ul>
         <li>
-          <a
-            href="https://cloudstore.uni-ulm.de/s/MLq8oyprakp4yHJ"
-            target="_blank"
-            rel="noreferrer"
+          <DownloadLink
+            href={Unterschriftenliste_Ulm}
           >
             Unterschriftenliste Ulm
-          </a>
+          </DownloadLink>
         </li>
         <li>
-          <a
-            href="https://cloudstore.uni-ulm.de/s/Dt5A7eosctgHZke"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <DownloadLink href={Unterschriftenliste_Neu_Ulm}>
             Unterschriftenliste Neu-Ulm
-          </a>
+          </DownloadLink>
         </li>
         <li>
-          <a
-            href="https://cloudstore.uni-ulm.de/s/Yc8wwRTMY54WcHA"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <DownloadLink href={Klimastadtplan_Ulm}>
             Klimastadtplan Ulm
-          </a>
+          </DownloadLink>
         </li>
         <li>
-          <a
-            href="https://cloudstore.uni-ulm.de/s/qySt3ajJbWXosi8"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <DownloadLink href={Klimastadtplan_Neu_Ulm}>
             Klimastadtplan Neu-Ulm
-          </a>
+          </DownloadLink>
         </li>
       </ul>
       <h3>Wieso Klimaneutralität?</h3>
