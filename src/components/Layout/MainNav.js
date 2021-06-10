@@ -1,3 +1,5 @@
+
+import { globalHistory } from "@reach/router"
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import is, { isNot } from 'styled-is'
@@ -116,7 +118,7 @@ const MenuButton = styled(Icon)`
   }
 `
 
-export const isGermanZero = () => location.pathname.startsWith('/germanzero') // eslint-disable-line no-restricted-globals
+export const isGermanZero = () => globalHistory.location.pathname.startsWith('/germanzero')
 
 const getMainNav = () => isGermanZero() ?
   (
