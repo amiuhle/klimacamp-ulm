@@ -1,2 +1,0 @@
-(self.webpackChunkklimacamp_ulm_neu_ulm=self.webpackChunkklimacamp_ulm_neu_ulm||[]).push([[408],{5408:function(u,n,a){"use strict";a.r(n);a(7294);n.default=function(u){u.locations,u.actionTranslations}}}]);
-//# sourceMappingURL=408-ec91caafea9d0efe93d2.js.map
